@@ -287,7 +287,6 @@
 		B79AD3946E5B1D88827D5BE7 /* Allan */ = {
 			isa = PBXGroup;
 			children = (
-				F61D18FB1AA32C5C004FD77D /* Frameworks */,
 				F61D18FD1AA32C5C004FD77D /* ViewModels */,
 				F61D18CD1AA32505004FD77D /* Models */,
 			);
@@ -301,7 +300,6 @@
 				F61D18A31AA32493004FD77D /* Extensions */,
 				F61D18A81AA32493004FD77D /* Protocols */,
 				F61D18AA1AA32493004FD77D /* Resources */,
-				F61D18B71AA32493004FD77D /* ViewModels */,
 				F61D18B91AA32493004FD77D /* Views */,
 			);
 			path = "Allan iOS";
@@ -311,7 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				F61D18D91AA32A8A004FD77D /* Controllers */,
-				F61D18DD1AA32A8A004FD77D /* Extentions */,
+				F61D19BA1AA34A8E004FD77D /* Extensions */,
 				F61D18DF1AA32A8A004FD77D /* Protocols */,
 				F61D18E11AA32A8A004FD77D /* Resources */,
 				F61D18EC1AA32A8A004FD77D /* Views */,
@@ -379,13 +377,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		F61D18B71AA32493004FD77D /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		F61D18B91AA32493004FD77D /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,13 +399,6 @@
 				F61D18DC1AA32A8A004FD77D /* ViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F61D18DD1AA32A8A004FD77D /* Extentions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extentions;
 			sourceTree = "<group>";
 		};
 		F61D18DF1AA32A8A004FD77D /* Protocols */ = {
@@ -466,14 +450,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F61D18FB1AA32C5C004FD77D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			path = Allan/Frameworks;
-			sourceTree = SOURCE_ROOT;
-		};
 		F61D18FD1AA32C5C004FD77D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,6 +480,14 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		F61D19BA1AA34A8E004FD77D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			path = "Allan OSX/Extensions";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
