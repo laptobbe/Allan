@@ -27,6 +27,8 @@
 		F61D19AF1AA33D4E004FD77D /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61D19821AA33A16004FD77D /* CouchbaseLite.framework */; };
 		F61D19B01AA33D69004FD77D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F61D19201AA333AC004FD77D /* libz.dylib */; };
 		F61D19B71AA3490A004FD77D /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61D19821AA33A16004FD77D /* CouchbaseLite.framework */; };
+		F61D19BF1AA3C17E004FD77D /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61D19BE1AA3C17E004FD77D /* MultipeerConnectivity.framework */; };
+		F61D19C11AA3C199004FD77D /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61D19C01AA3C199004FD77D /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +201,8 @@
 		F61D191E1AA3339D004FD77D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		F61D19201AA333AC004FD77D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F61D196B1AA33A15004FD77D /* CouchbaseLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CouchbaseLite.xcodeproj; path = "couchbase-lite-ios/CouchbaseLite.xcodeproj"; sourceTree = "<group>"; };
+		F61D19BE1AA3C17E004FD77D /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		F61D19C01AA3C199004FD77D /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61D19C11AA3C199004FD77D /* MultipeerConnectivity.framework in Frameworks */,
 				F61D19B01AA33D69004FD77D /* libz.dylib in Frameworks */,
 				F61D19AF1AA33D4E004FD77D /* CouchbaseLite.framework in Frameworks */,
 				F61D191F1AA3339D004FD77D /* libsqlite3.dylib in Frameworks */,
@@ -220,6 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61D19BF1AA3C17E004FD77D /* MultipeerConnectivity.framework in Frameworks */,
 				F61D19B71AA3490A004FD77D /* CouchbaseLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 		3952CA4975198D043B4D2582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F61D19BD1AA3C150004FD77D /* OSX */,
 				B04BA629A5BB0B8BD66EFE32 /* iOS */,
 			);
 			name = Frameworks;
@@ -274,6 +281,7 @@
 		B04BA629A5BB0B8BD66EFE32 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F61D19C01AA3C199004FD77D /* MultipeerConnectivity.framework */,
 				F61D19201AA333AC004FD77D /* libz.dylib */,
 				F61D191E1AA3339D004FD77D /* libsqlite3.dylib */,
 				F61D191C1AA3338A004FD77D /* Security.framework */,
@@ -488,6 +496,14 @@
 			name = Extensions;
 			path = "Allan OSX/Extensions";
 			sourceTree = SOURCE_ROOT;
+		};
+		F61D19BD1AA3C150004FD77D /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				F61D19BE1AA3C17E004FD77D /* MultipeerConnectivity.framework */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
