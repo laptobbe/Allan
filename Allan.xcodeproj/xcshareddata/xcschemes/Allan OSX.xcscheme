@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2DE6DD90BF117BB59900EB8"
-               BuildableName = "Allan.app"
-               BlueprintName = "Allan"
+               BlueprintIdentifier = "F61D187E1AA32044004FD77D"
+               BuildableName = "Allan OSX.app"
+               BlueprintName = "Allan OSX"
                ReferencedContainer = "container:Allan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C333AC1D83811323B904949"
-               BuildableName = "UnitTests.xctest"
-               BlueprintName = "UnitTests"
+               BlueprintIdentifier = "F61D188F1AA32045004FD77D"
+               BuildableName = "Allan OSXTests.xctest"
+               BlueprintName = "Allan OSXTests"
                ReferencedContainer = "container:Allan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C333AC1D83811323B904949"
-               BuildableName = "UnitTests.xctest"
-               BlueprintName = "UnitTests"
+               BlueprintIdentifier = "F61D188F1AA32045004FD77D"
+               BuildableName = "Allan OSXTests.xctest"
+               BlueprintName = "Allan OSXTests"
                ReferencedContainer = "container:Allan.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -55,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2DE6DD90BF117BB59900EB8"
-            BuildableName = "Allan.app"
-            BlueprintName = "Allan"
+            BlueprintIdentifier = "F61D187E1AA32044004FD77D"
+            BuildableName = "Allan OSX.app"
+            BlueprintName = "Allan OSX"
             ReferencedContainer = "container:Allan.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,9 +76,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2DE6DD90BF117BB59900EB8"
-            BuildableName = "Allan.app"
-            BlueprintName = "Allan"
+            BlueprintIdentifier = "F61D187E1AA32044004FD77D"
+            BuildableName = "Allan OSX.app"
+            BlueprintName = "Allan OSX"
             ReferencedContainer = "container:Allan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -90,15 +91,16 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2DE6DD90BF117BB59900EB8"
-            BuildableName = "Allan.app"
-            BlueprintName = "Allan"
+            BlueprintIdentifier = "F61D187E1AA32044004FD77D"
+            BuildableName = "Allan OSX.app"
+            BlueprintName = "Allan OSX"
             ReferencedContainer = "container:Allan.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
