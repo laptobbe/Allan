@@ -4,6 +4,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var database: CBLDatabase?
+    var peerConnect: PeerConnect?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         let manager = CBLManager.sharedInstance()
@@ -12,6 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if self.database == nil {
             //TODO Show error dialog
         }
+        
+        self.peerConnect = PeerConnect(credentials: nil, accept: { () -> Bool in
+            return true
+        }, found: { (data) -> Void in
+            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+        })
+        
+        self.peerConnect?.findSync()
+        
         return true
     }
 

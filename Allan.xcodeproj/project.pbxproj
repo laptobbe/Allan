@@ -29,6 +29,8 @@
 		F61D19B71AA3490A004FD77D /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61D19821AA33A16004FD77D /* CouchbaseLite.framework */; };
 		F61D19BF1AA3C17E004FD77D /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61D19BE1AA3C17E004FD77D /* MultipeerConnectivity.framework */; };
 		F61D19C11AA3C199004FD77D /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61D19C01AA3C199004FD77D /* MultipeerConnectivity.framework */; };
+		F61D19C71AA3C23F004FD77D /* PeerConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D19C61AA3C23F004FD77D /* PeerConnect.swift */; };
+		F61D19C81AA3C23F004FD77D /* PeerConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D19C61AA3C23F004FD77D /* PeerConnect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +205,7 @@
 		F61D196B1AA33A15004FD77D /* CouchbaseLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CouchbaseLite.xcodeproj; path = "couchbase-lite-ios/CouchbaseLite.xcodeproj"; sourceTree = "<group>"; };
 		F61D19BE1AA3C17E004FD77D /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		F61D19C01AA3C199004FD77D /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		F61D19C61AA3C23F004FD77D /* PeerConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerConnect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +298,7 @@
 		B79AD3946E5B1D88827D5BE7 /* Allan */ = {
 			isa = PBXGroup;
 			children = (
+				F61D19C21AA3C20D004FD77D /* Controllers */,
 				F61D18FD1AA32C5C004FD77D /* ViewModels */,
 				F61D18CD1AA32505004FD77D /* Models */,
 			);
@@ -503,6 +507,14 @@
 				F61D19BE1AA3C17E004FD77D /* MultipeerConnectivity.framework */,
 			);
 			name = OSX;
+			sourceTree = "<group>";
+		};
+		F61D19C21AA3C20D004FD77D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F61D19C61AA3C23F004FD77D /* PeerConnect.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -733,6 +745,7 @@
 			files = (
 				F61D18D21AA32505004FD77D /* Task.swift in Sources */,
 				F61D18BE1AA32493004FD77D /* DetailViewController.swift in Sources */,
+				F61D19C71AA3C23F004FD77D /* PeerConnect.swift in Sources */,
 				F61D18BD1AA32493004FD77D /* ApplicationController.swift in Sources */,
 				F61D18BC1AA32493004FD77D /* AppDelegate.swift in Sources */,
 			);
@@ -744,6 +757,7 @@
 			files = (
 				F61D18F01AA32A8A004FD77D /* ViewController.swift in Sources */,
 				F61D18EF1AA32A8A004FD77D /* AppDelegate.swift in Sources */,
+				F61D19C81AA3C23F004FD77D /* PeerConnect.swift in Sources */,
 				F61D18D31AA32505004FD77D /* Task.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

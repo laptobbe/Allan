@@ -11,10 +11,16 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    var peerConnect: PeerConnect?
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        let credentials = "odouid:eudoeud".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+        self.peerConnect = PeerConnect(credentials: credentials, accept: { () -> Bool in
+            return true
+        }, found: { (data) -> Void in
+            
+        })
+        self.peerConnect?.broadcastSync()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
