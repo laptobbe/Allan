@@ -8,7 +8,7 @@
 
 import MultipeerConnectivity
 
-typealias Acceptance = () -> Bool
+typealias Acceptance = ((Bool) -> Void) -> Void
 typealias Found = (NSData) -> Void
 
 class PeerConnect : NSObject, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate, MCSessionDelegate {
@@ -45,8 +45,9 @@ class PeerConnect : NSObject, MCNearbyServiceAdvertiserDelegate, MCNearbyService
     }
     
     func advertiser(advertiser: MCNearbyServiceAdvertiser!, didReceiveInvitationFromPeer peerID: MCPeerID!, withContext context: NSData!, invitationHandler: ((Bool, MCSession!) -> Void)!) {
-        let accept = self.accept()
-        invitationHandler(accept, accept ? self.session : nil)
+        self.accept() { accept in
+            invitationHandler(accept, accept ? self.session : nil)
+        }
     }
     
     func browser(browser: MCNearbyServiceBrowser!, foundPeer pID: MCPeerID!, withDiscoveryInfo info: [NSObject : AnyObject]!) {

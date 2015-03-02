@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //TODO Show error dialog
         }
         
-        self.peerConnect = PeerConnect(credentials: nil, accept: { () -> Bool in
-            return true
+        self.peerConnect = PeerConnect(credentials: nil, accept: { (completion) -> Void in
+            completion(true)
         }, found: { (data) -> Void in
             println(NSString(data: data, encoding: NSUTF8StringEncoding))
         })
